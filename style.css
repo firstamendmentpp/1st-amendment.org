@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: linear-gradient(to bottom,#B22234, #fdfdfd, #3C3B6E);
+}
+.head1 {
+    color: black; 
+    padding: 20;
+    text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+main {
+    padding: 20px;
+}
+section {
+    background: white;
+    padding: 30px;
+    margin: 60px auto;
+    border-radius: 12px;
+    max-width: 900px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+listparagraph {
+    padding: 15px;
+    border-radius: 8px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 41.75%;
+}
+footer {
+    font-size: 20px;
+    background-color: transparent;
+    color:black;
+    padding: 30px;
+    text-align: center;
+}
+.border {
+    border-radius: 50%;
+    width: 5%;
+    height: 5%;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  background: white;
+  padding: 10px 20px;
+  top: 0;
+  width: 100%;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+nav a:hover {
+  color: gray;
+}
+html {
+  scroll-behavior: smooth;
+}
+.Sections Button {
+    background-color: transparent;
+    color: black;
+    padding: 30px;
+    font-size: 25px;
+    border: none;
+    border-top-right-radius: 12%;
+    min-width: 160px;
+}
+.Sections {
+    position: relative;
+    display: inline-block;
+}
+.Sections-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 2px 3px 0px 2px black;
+    border-bottom-right-radius: 12%;
+    z-index: 1;
+}
+.Sections-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom-right-radius: 12%;
+}
+.Sections-content a:hover {background-color: #f6bcbc;}
+.Sections:hover .Sections-content {display: block;}
+.Sections:hover .Sections {background-color: transparent; box-shadow: 4px 0px 0px 0px black;}
+.link-color {
+    color: black;
+    text-decoration: none;
+    padding: 20;
+    text-align: center;
+}
+.link-color:hover {
+    color: rgb(230, 219, 219);
+}
