@@ -4,10 +4,14 @@ body {
   line-height: 1.6;
   color: #222;
   background: linear-gradient(to bottom,#B22234, #fdfdfd, #3C3B6E);
+  min-height: 100vh;
 }
 .head1 {
     color: black; 
     padding: 20;
+    text-align: center;
+}
+.head2 {
     text-align: center;
 }
 body {
@@ -48,6 +52,11 @@ footer {
     width: 5%;
     height: 5%;
 }
+.border2 {
+    border-radius: 50%;
+    width: 8%;
+    height: 8%;
+}
 nav ul {
   list-style: none;
   display: flex;
@@ -71,41 +80,86 @@ html {
 .Sections Button {
     background-color: transparent;
     color: black;
-    padding: 30px;
+    padding: 21px;
     font-size: 25px;
     border: none;
-    border-top-right-radius: 12%;
     min-width: 160px;
 }
 .Sections {
     position: relative;
     display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
 }
 .Sections-content {
     display: none;
     position: absolute;
     background-color: transparent;
     min-width: 160px;
-    box-shadow: 2px 3px 0px 2px black;
-    border-bottom-right-radius: 12%;
     z-index: 1;
 }
 .Sections-content a {
     color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+    padding: 8px 12px;
+    text-decoration: underline;
     display: block;
-    border-bottom-right-radius: 12%;
 }
 .Sections-content a:hover {background-color: #f6bcbc;}
 .Sections:hover .Sections-content {display: block;}
-.Sections:hover .Sections {background-color: transparent; box-shadow: 4px 0px 0px 0px black;}
+.Sections:hover .Sections {background-color: #f6bcbc;}
 .link-color {
     color: black;
     text-decoration: none;
     padding: 20;
-    text-align: center;
+    display: block;
 }
 .link-color:hover {
     color: rgb(230, 219, 219);
 }
+.float-left {
+    float: left;
+    display:block;
+    width: 5.5%;
+    height: auto;
+    padding-left: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.link-connect {
+    color: #0000FF;
+}
+.video-container {
+      position: relative;
+      width: 45%;
+      max-width: 800px;
+      margin: auto;
+    }
+iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    display: block;
+}
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: black;
+    border: none;
+    padding: 18px;
+    cursor: pointer;
+    font-size: 48px;
+    border-radius: 50%;
+    z-index: 10;
+    }
+.prev {
+    left: -50px; /* move outside left edge */
+}
+.next {
+    right: -50px; /* move outside right edge */
+ }
