@@ -10,10 +10,11 @@
 </head>
 <body>
 
+
 <a href="1st-amendment.org"><img class="float-left img" src="favicon.png" alt="F.A.P.P Logo"> </a>
 
 <div class="Sections">
-  <button class="Sections Button"> More on F. A. P. P.</button>
+  <button class="Sections-button"> More on F. A. P. P.</button>
     <div class="Sections-content">
         <a class="link-color" href="who-are-we.html">Who Are We?</a>
         <a class="link-color" href="why-we-exist.html">Why We Exist</a>
@@ -23,13 +24,20 @@
     </div>
 </div>
 
+<script>
+  document.querySelectorAll('.Sections-button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.parentElement.classList.toggle('open');
+    });
+  });
+</script>
 
 <h1 class="head1">First Ammendment Protection Foundation</h1>
 
-  <img src="images/logo1.png" alt="American flag with a bald eagle on right side" class="center">
+<img src="images/logo1.png" alt="American flag with a bald eagle on right side" class="center">
 
 
-<h2 class="head1">Weekly Featured Videos</h2>
+<h2 class="head2">Weekly Featured Videos</h2>
 
 <div class="video-container">
     <button class="nav-btn prev" onclick="changeVideo(-1)">❮</button>
