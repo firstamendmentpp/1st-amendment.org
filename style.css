@@ -257,17 +257,12 @@ iframe {
         height: auto;
         margin: auto;
     }
-    .Sections {
-        display: block;
-        text-align: left;
-    }
-    .Sections.open {
-        position: relative;
+    .Sections.open .Sections-content {
         max-height: 500px;
         opacity: 1;
     }
     .Sections-content {
-        position: relative;
+        position: absolute;
         max-height: 500px;
         opacity: 1;
         font-size: 1.25rem;
