@@ -132,8 +132,8 @@ iframe {
 
 .site-header {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
     grid-template-areas: "logo menu social-icon-1 social-icon-2 social-icon-3";
     align-items: center;
     width: fit-content;
@@ -240,7 +240,7 @@ iframe {
         color: black; 
         padding: 20;
         text-align: center;
-        font-size: 30px;
+        font-size: 1.875rem;
     }
     .center {
         width: 75vw;
@@ -261,10 +261,18 @@ iframe {
         display: block;
         text-align: left;
     }
-    .Sections.open .Sections-content {
+    .Sections.open {
         position: relative;
         max-height: 500px;
         opacity: 1;
+    }
+    .Sections-content {
+        position: absolute;
+        max-height: 500px;
+        opacity: 1;
+        font-size: 1.25rem;
+        top: 100%;
+        left: 0;
     }
     .float-left {
         display: block;
@@ -274,7 +282,7 @@ iframe {
         justify-self: start;
     }
     .quintessential-regular {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     .Sections-button{
         text-align: center;
@@ -339,7 +347,4 @@ iframe {
        align-self: start;
        justify-self: end;
    }
-    .Sections-content {
-        font-size: 1.25rem;
-    }
 }
