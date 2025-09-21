@@ -267,7 +267,7 @@ iframe {
         opacity: 1;
     }
     .Sections-content {
-        position: absolute;
+        position: relative;
         max-height: 500px;
         opacity: 1;
         font-size: 1.25rem;
