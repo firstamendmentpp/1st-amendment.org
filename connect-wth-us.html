@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F.A.P.P</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+</head>
+<body>
+
+<a href="1st-amendment.org"><img class="float-left img" src="favicon.png" alt="F.A.P.P Logo"> </a>
+
+<div class="Sections">
+  <button class="Sections-button"> More on F. A. P. P.</button>
+    <div class="Sections-content">
+        <a class="link-color" href="index.html">Home</a>
+        <a class="link-color" href="who-are-we.html">Who Are We?</a>
+        <a class="link-color" href="why-we-exist.html">Why We Exist</a>
+        <a class="link-color" href="principles.html">Principles</a>
+        <a class="link-color" href="what-can-I-do?.html">What Can I do to help?</a>
+    </div>
+</div>
+
+<script>
+  document.querySelectorAll('.Sections-button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.parentElement.classList.toggle('open');
+    });
+  });
+</script>
+
+</body>
+</html>

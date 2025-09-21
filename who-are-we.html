@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F.A.P.P</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<a href="1st-amendment.org"><img class="float-left img" src="favicon.png" alt="F.A.P.P Logo"> </a>
+
+<div class="Sections">
+  <button class="Sections-button"> More on F. A. P. P.</button>
+    <div class="Sections-content">
+        <a class="link-color" href="index.html">Home</a>
+        <a class="link-color" href="why-we-exist.html">Why We Exist</a>
+        <a class="link-color" href="principles.html">Principles</a>
+        <a class="link-color" href="what-can-I-do?.html">What Can I do to help?</a>
+        <a class="link-color" href="connect-wth-us.html">Connect With Us</a>
+    </div>
+</div>
+
+<script>
+  document.querySelectorAll('.Sections-button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.parentElement.classList.toggle('open');
+    });
+  });
+</script>
+
+<h1 class="head1">Who Are We?</h1>
+
+<intro>
+  <main>
+    <section>
+      <h2>The reason behind the founding of <em>First Amendment Protection Partnership</em></h2>
+      <p>As most Americans know, the first amendment is one of the most, if not <em>the</em> most, important amendments in the consitution.
+        If it wasn't for the first amendment, the American people could possibly lose many of the rights we hold today, including the right to freely critize the government and choose what religion to follow.<br>
+        The <em>First Amendment Protection Partnership</em> was founded because as time goes on, people forget what power the first amendment holds, which is scary because in this day and age the government 
+        has a much eaiser time restricting the first amendment right than ever before.
+      </p>
+    </section>
+  </main>
+</intro>
+
+
+  <our-goal>
+    <main>
+      <section>
+        <h2>Our Goal</h2>
+        <p>The First Amendment Protection Partnership may sound like a fancy name or a complicated mission, but in reality we strive for one goal:
+  to stop government imposed restrictions on the first amendment. 
+        </p>
+      </section>
+    </main>
+  </our-goal>
+
+
+
+</body>
+</html>

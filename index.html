@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F.A.P.P</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!--   Fonts   -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Explora&family=Quintessential&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+</head>
+<body>
+
+
+
+<header class="site-header mobile-header">
+
+  <a href="1st-amendment.org"><img class="float-left" src="images/eaglebg.png" alt="F.A.P.P Logo"></a>
+
+  <div class="Sections">
+    <button class="Sections-button">More on <span class="quintessential-regular"><em>F. A. P. P.</em></span></button>
+      <div class="Sections-content">
+          <a class="link-color" href="who-are-we.html">Who Are We?</a>
+          <a class="link-color" href="why-we-exist.html">Why We Exist</a>
+          <a class="link-color" href="principles.html">Principles</a>
+          <a class="link-color" href="what-can-I-do?.html">What Can I do to help?</a>
+          <a class="link-color" href="connect-wth-us.html">Connect With Us</a>
+      </div>
+  </div>
+
+  <div class="social-icons-1">
+    <a href="https://www.tiktok.com/@firstamendmentpp"><img class="social-size" src="images/tiktok.png" alt="Tiktok Logo"></a>
+  </div>
+
+  <div class="social-icons-2">
+    <a href="https://www.instagram.com/firstamendmentpp/"><img class="social-size" src="images/insta.png" alt="Instagram Logo"></a>
+  </div>
+  
+  <div class="social-icons-3">
+    <a href="mailto:firstamendmentpp@gmail.com"><img class="social-size" src="images/email.png" alt="Email Logo"></a>
+  </div>
+
+</header>
+
+
+<script>
+  document.querySelectorAll('.Sections-button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.parentElement.classList.toggle('open');
+    });
+  });
+</script>
+
+<h1 class="head1 quintessential-regular"><em>First Ammendment Protection Foundation</em></h1>
+
+<img src="images/logo1.png" alt="American flag with a bald eagle on right side" class="center">
+
+
+<h2 class="head2">Weekly Featured Videos</h2>
+
+<div class="video-container">
+    <button class="nav-btn prev" onclick="changeVideo(-1)">❮</button>
+    <iframe id="youtubePlayer"
+            src="https://www.youtube.com/embed/XNrpbEefe8o"
+            title="YouTube video"
+            allowfullscreen>
+    </iframe>
+    <button class="nav-btn next" onclick="changeVideo(1)">❯</button>
+  </div>
+
+  <script>
+    const videos = [
+      "https://www.youtube.com/embed/XNrpbEefe8o",
+      "https://www.youtube.com/embed/CT3tyU7pLy8"
+    ];
+
+    let currentIndex = 0;
+    const player = document.getElementById("youtubePlayer");
+
+    function changeVideo(direction) {
+      currentIndex += direction;
+
+      if (currentIndex < 0) {
+        currentIndex = videos.length - 1; // wrap to last
+      } else if (currentIndex >= videos.length) {
+        currentIndex = 0; // wrap to first
+      }
+      // Swap out the video (this also stops the previous one)
+      player.src = videos[currentIndex];
+    }
+  </script>
+
+
+  <who>
+    <main>
+      <section id="Who Are We">
+      <h2 class="aref-ruqaa-regular">Who We Are</h2>
+      <p>
+        The First Amendment Protection Partnership (FAPP) stands to protect the first amendment right for <em>all</em> Americans, regardless of politics, age, or background.
+        FAPP's goal is to stand as a uniting force against government imposed restrictions surrounding freedom of speech, including but not limited to, censorship and surveillance that threaten the core of democracy.
+      </p>
+      </section id="Who Are We">
+    </main>
+  </who>
+
+  <why>
+    <main>
+      <section id="Why We Exist">
+      <h2 class="aref-ruqaa-regular">Why We Exist</h2>
+      <ol>
+        <li><strong>To protect the most fundamental principal of the United States: Freedom of speech</strong></li>
+        <listparagraph>Without freedom of speech, everything the USA stands for collapses.</listparagraph>
+        <li><strong>Government overreach is bipartisan</strong></li>
+        <listparagraph>Our mission isn't to pick sides or argue for any group, but to stand for the right of <em>all</em> Americans to have the ability to aptly express themselves, regardless of politics, age, race, or identity.</listparagraph>
+        <li><strong>Privacy is a part of true expression</strong></li>
+        <listparagraph>Forcing American citizens to identify themselves to the government to access information violates both the First Amendment, and global human rights standards. We stand to stop this growing precedent.</listparagraph>
+      </ol>
+      </section id="Why We Exist">
+    </main>
+  </why>
+
+<principles>
+  <main>
+    <section id="Principles">
+      <h2 class="aref-ruqaa-regular">Principles</h2>
+    <ul>
+      <li>Nonpartisan, nonviolent, and <strong><em>absolutely</em></strong> focused on free speech.</li>
+      <li>We defend speech we <em>agree</em> with and speech we <em>hate</em>, because protecting only “popular” speech is <strong><em>not</em></strong> protection at all.</li>
+      <li>We oppose censorship by government, corporations, or institutions that act as arms of the state.</li>
+      <li>We welcome anyone — left, right, center, libertarian, apolitical — who shares our commitment to free expression.</li>
+    </ul>
+    </section id="Principles">
+  </main>
+</principles>
+
+  <tdlr>
+    <main>
+      <section id="TD;LR:">
+      <h2 class="aref-ruqaa-regular">Summery</h2>
+      <p>
+        No matter politics, age, race, identify, or background, our mission is to end the growing suffocation against the first right amendment for all Americans. 
+        We stand for <strong><em>ALL</em></strong> people in the fight for freedom of speech and protection against invasive government overreaches that inhibit the universal right to freedom of speech.
+      </p>
+    </section id="TD;LR:">
+    </main>
+  </tdlr>
+
+
+<footer class="footer">
+
+  <h2 class="connect-text">Connect With us:</h2>
+
+  <div class="social-icons-4">
+    <a href="https://www.tiktok.com/@firstamendmentpp"><img class="social-size" src="images/tiktok.png" alt="Tiktok Logo"></a>
+  </div>
+
+  <div class="social-icons-5">
+    <a href="https://www.instagram.com/firstamendmentpp/"><img class="social-size" src="images/insta.png" alt="Instagram Logo"></a>
+  </div>
+  
+  <div class="social-icons-6">
+    <a href="mailto:firstamendmentpp@gmail.com"><img class="social-size" src="images/email.png" alt="Email Logo"></a>
+  </div>
+</footer>
+
+
+</body>
+</html>

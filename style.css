@@ -1,0 +1,345 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: linear-gradient(to bottom,#B22234, #fdfdfd, #3C3B6E);
+  min-height: 100vh;
+}
+.head1 {
+    color: black; 
+    padding: 20;
+    text-align: center;
+}
+.head2 {
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+section {
+    background: white;
+    padding: 30px;
+    margin: 60px auto;
+    border-radius: 12px;
+    max-width: 900px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+listparagraph {
+    padding: 15px;
+    border-radius: 8px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+.footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    background-color: transparent;
+}
+.border2 {
+    border-radius: 50%;
+    width: 8%;
+    height: 8%;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  background: white;
+  padding: 10px 20px;
+  top: 0;
+  width: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}
+.link-connect {
+    color: #0000FF;
+}
+.video-container {
+    position: relative;
+    width: 40%;
+    max-width: 800px;
+    margin: auto;
+    aspect-ratio: 16 / 9;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: black;
+    border: none;
+    padding: 18px;
+    cursor: pointer;
+    font-size: 48px;
+    border-radius: 50%;
+    z-index: 10;
+}
+.prev {
+    left: -50px; /* move outside left edge */
+}
+.next {
+    right: -50px; /* move outside right edge */
+}
+
+@media (min-width: 768px) {
+    .footer {
+        display: none;
+    }
+}
+
+/* Fonts */
+
+.quintessential-regular {
+  font-family: "Quintessential", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.explora-regular {
+  font-family: "Explora", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.aref-ruqaa-regular {
+  font-family: "Aref Ruqaa", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.aref-ruqaa-bold {
+  font-family: "Aref Ruqaa", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/* side header + sections + button */
+
+.site-header {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "logo menu social-icon-1 social-icon-2 social-icon-3";
+    align-items: center;
+    width: fit-content;
+    gap: 1rem;
+}
+.site-header a img {grid-area: "logo";}
+.Sections {grid-area: "menu";}
+.social-icons {grid-area: "social-icon-1 social-icon-2 social-icon-3";}
+
+.float-left {
+    display: block;
+    width: 10vw;
+    height: auto;
+    position: static;
+}
+.Sections-button {
+    background-color: transparent;
+    color: black;
+    padding: 1.3125rem;
+    font-size: 1.5625rem;
+    border: none;
+    min-width: 160px;
+    cursor: pointer;
+    gap: .5rem;
+}
+.Sections {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    justify-self: start;
+    align-self: start; 
+}
+.Sections-content {
+    overflow: hidden;
+    background-color: transparent;
+    transition: max-height 1s ease, opacity 0.9s ease;
+    opacity: 0;
+    position: absolute;
+    z-index: 999;
+    text-align: center;
+    top: calc(100%);
+    left: 0;
+    top: 100%;
+    width: max-content;
+    max-height: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.Sections-button:hover {background-color: transparent;}
+.Sections-content a:hover {background-color: #f6bcbc;}
+.Sections:hover .Sections-content {display: block;}
+.Sections.open .Sections-content {max-height: 500px; opacity: 1;}
+.Sections:hover .Sections {background-color: #f6bcbc;}
+
+@media (min-width: 768px) {
+  .Sections:hover .Sections-content {
+    max-height: 500px;
+    opacity: 1;
+  }
+}
+
+.link-color {
+    color: black;
+    text-decoration: none;
+    padding: 21px;
+    display: block;
+    font-size: 20px;
+}
+.link-color:hover {
+    color: rgb(230, 219, 219);
+}
+.social-icons-1 {
+    display: flex;
+    gap: 2rem;
+    justify-self: start;
+}
+.social-icons-2 {
+    display: flex;
+    gap: 2rem;
+    justify-self: start;
+}
+.social-icons-3 {
+    display: flex;
+    gap: 2rem;
+    justify-self: start;
+}
+.social-size {
+    display: block;
+}
+
+
+
+
+
+/* responsiveness */
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .head1 {
+        color: black; 
+        padding: 20;
+        text-align: center;
+        font-size: 30px;
+    }
+    .center {
+        width: 75vw;
+    }
+    .link-color {
+        font-size: 1.25rem;
+        padding: 0rem 0rem 1rem 0rem;
+    }
+    .head2 {
+        font-size: 25px;
+    }
+    .video-container {
+        width: 70vw;
+        height: auto;
+        margin: auto;
+    }
+    .Sections {
+        display: block;
+        text-align: left;
+    }
+    .Sections.open .Sections-content {
+        position: relative;
+        max-height: 500px;
+        opacity: 1;
+    }
+    .float-left {
+        display: block;
+        width: 20vw;
+        height: auto;
+        align-self: center;
+        justify-self: start;
+    }
+    .quintessential-regular {
+        font-size: 20px;
+    }
+    .Sections-button{
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.25rem;
+    }
+    .social-icons {
+        display: block;
+        grid-row: 2;
+        justify-self: center;
+    }
+    .site-header {
+        display: grid;
+        position: relative;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: "logo menu tiktok insta email ";
+        align-items: start;
+        flex-direction: column;
+    }
+    .social-size {
+        width: 8vw;
+        height: auto;
+    }
+   .social-icons-1 {
+        display: none;
+   }
+   .social-icons-2 {
+        display: none;
+   }
+   .social-icons-3 {
+        display: none;
+   }
+
+
+
+    .connect-text {
+       grid-column: 2;
+       grid-row: 1;
+       font-family: "Aref Ruqaa", serif;
+       font-weight: 400;
+       font-style: normal;
+       text-align: center;
+   }
+    .social-icons-4 {
+       grid-column: 2;
+       grid-row: 2;
+       display: block;
+       align-self: start;
+   }
+   .social-icons-5 {
+       grid-column: 2;
+       grid-row: 2;
+       display: block;
+       align-self: start;
+       justify-self: center;
+   }
+   .social-icons-6 {
+       grid-column: 2;
+       grid-row: 2;
+       display: block;
+       align-self: start;
+       justify-self: end;
+   }
+    .Sections-content {
+        font-size: 1.25rem;
+    }
+}
