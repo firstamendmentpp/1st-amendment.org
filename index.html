@@ -42,24 +42,40 @@
 
 
 <script>
-document.querySelectorAll('.Sections-button').forEach(button => {
-    button.addEventListener('click', () => {
-        const parent = button.closest('.Sections');
-        const content = parent.querySelector('.Sections-content');
+document.querySelectorAll('.Sections').forEach(section => {
+    const button = section.querySelector('.Sections-button');
+    const content = section.querySelector('.Sections-content');
 
-        if (parent.classList.contains('open')) {
-            // closing
-            parent.classList.remove('open');
-            // let the dropOut animation play, then collapse
+    // Click toggles everywhere
+    button.addEventListener('click', () => {
+        if (section.classList.contains('open')) {
+            section.classList.remove('open');
             setTimeout(() => {
                 content.style.maxHeight = "0px";
                 content.style.opacity = "0";
-            }, 4); // match dropOut animation duration
+            }, 400); // match dropOut animation duration
         } else {
-            // opening
-            parent.classList.add('open');
+            section.classList.add('open');
             content.style.maxHeight = "500px";
             content.style.opacity = "1";
+        }
+    });
+
+    // Hover toggles only on desktop
+    section.addEventListener('mouseenter', () => {
+        if (window.innerWidth > 768) {
+            section.classList.add('open');
+            content.style.maxHeight = "500px";
+            content.style.opacity = "1";
+        }
+    });
+    section.addEventListener('mouseleave', () => {
+        if (window.innerWidth > 768) {
+            section.classList.remove('open');
+            setTimeout(() => {
+                content.style.maxHeight = "0px";
+                content.style.opacity = "0";
+            }, 400);
         }
     });
 });
