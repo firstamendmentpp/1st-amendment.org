@@ -14,6 +14,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Explora&family=Quintessential&display=swap" rel="stylesheet">
 
   <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+
+  <!-- Privacy Policy -->
+
+
 </head>
 <body>
 
@@ -26,7 +30,7 @@
   <div class="Sections">
     <button class="Sections-button">More on <span class="quintessential-regular"><em>F. A. P. P.</em></span></button>
       <div class="Sections-content">
-          <a class="link-color" href="who-are-we.html">Who Are We?</a>
+          <a class="link-color" href="about-us.html">About Us</a>
           <a class="link-color" href="why-we-exist.html">Why We Exist</a>
           <a class="link-color" href="principles.html">Principles</a>
           <a class="link-color" href="what-can-I-do?.html">What Can I do to help?</a>
@@ -34,27 +38,31 @@
       </div>
   </div>
 
-  <div class="social-icons-1">
-    <a href="https://www.tiktok.com/@firstamendmentpp"><img class="social-size" src="images/tiktok.png" alt="Tiktok Logo"></a>
-  </div>
-
-  <div class="social-icons-2">
-    <a href="https://www.instagram.com/firstamendmentpp/"><img class="social-size" src="images/insta.png" alt="Instagram Logo"></a>
-  </div>
-  
-  <div class="social-icons-3">
-    <a href="mailto:firstamendmentpp@gmail.com"><img class="social-size" src="images/email.png" alt="Email Logo"></a>
-  </div>
-
 </header>
 
 
 <script>
-  document.querySelectorAll('.Sections-button').forEach(btn => {
-    btn.addEventListener('click', () => {
-      btn.parentElement.classList.toggle('open');
+document.querySelectorAll('.Sections-button').forEach(button => {
+    button.addEventListener('click', () => {
+        const parent = button.closest('.Sections');
+        const content = parent.querySelector('.Sections-content');
+
+        if (parent.classList.contains('open')) {
+            // closing
+            parent.classList.remove('open');
+            // let the dropOut animation play, then collapse
+            setTimeout(() => {
+                content.style.maxHeight = "0px";
+                content.style.opacity = "0";
+            }, 4); // match dropOut animation duration
+        } else {
+            // opening
+            parent.classList.add('open');
+            content.style.maxHeight = "500px";
+            content.style.opacity = "1";
+        }
     });
-  });
+});
 </script>
 
 <h1 class="head1 quintessential-regular"><em>First Ammendment Protection Foundation</em></h1>
@@ -101,7 +109,7 @@
     <main>
       <section id="Who Are We">
       <h2 class="aref-ruqaa-regular">Who We Are</h2>
-      <p>
+      <p class="size-text">
         The First Amendment Protection Partnership (FAPP) stands to protect the first amendment right for <em>all</em> Americans, regardless of politics, age, or background.
         FAPP's goal is to stand as a uniting force against government imposed restrictions surrounding freedom of speech, including but not limited to, censorship and surveillance that threaten the core of democracy.
       </p>
@@ -114,12 +122,12 @@
       <section id="Why We Exist">
       <h2 class="aref-ruqaa-regular">Why We Exist</h2>
       <ol>
-        <li><strong>To protect the most fundamental principal of the United States: Freedom of speech</strong></li>
-        <listparagraph>Without freedom of speech, everything the USA stands for collapses.</listparagraph>
-        <li><strong>Government overreach is bipartisan</strong></li>
-        <listparagraph>Our mission isn't to pick sides or argue for any group, but to stand for the right of <em>all</em> Americans to have the ability to aptly express themselves, regardless of politics, age, race, or identity.</listparagraph>
-        <li><strong>Privacy is a part of true expression</strong></li>
-        <listparagraph>Forcing American citizens to identify themselves to the government to access information violates both the First Amendment, and global human rights standards. We stand to stop this growing precedent.</listparagraph>
+        <li class="size-text"><strong>To protect the most fundamental principal of the United States: Freedom of speech</strong></li>
+        <listparagraph class="size-text">Without freedom of speech, everything the USA stands for collapses.</listparagraph>
+        <li class="size-text"><strong>Government overreach is bipartisan</strong></li>
+        <listparagraph class="size-text">Our mission isn't to pick sides or argue for any group, but to stand for the right of <em>all</em> Americans to have the ability to aptly express themselves, regardless of politics, age, race, or identity.</listparagraph>
+        <li class="size-text"><strong>Privacy is a part of true expression</strong></li>
+        <listparagraph class="size-text">Forcing American citizens to identify themselves to the government to access information violates both the First Amendment, and global human rights standards. We stand to stop this growing precedent.</listparagraph>
       </ol>
       </section id="Why We Exist">
     </main>
@@ -130,10 +138,10 @@
     <section id="Principles">
       <h2 class="aref-ruqaa-regular">Principles</h2>
     <ul>
-      <li>Nonpartisan, nonviolent, and <strong><em>absolutely</em></strong> focused on free speech.</li>
-      <li>We defend speech we <em>agree</em> with and speech we <em>hate</em>, because protecting only “popular” speech is <strong><em>not</em></strong> protection at all.</li>
-      <li>We oppose censorship by government, corporations, or institutions that act as arms of the state.</li>
-      <li>We welcome anyone — left, right, center, libertarian, apolitical — who shares our commitment to free expression.</li>
+      <li class="size-text">Nonpartisan, nonviolent, and <strong><em>absolutely</em></strong> focused on free speech.</li>
+      <li class="size-text">We defend speech we <em>agree</em> with and speech we <em>hate</em>, because protecting only “popular” speech is <strong><em>not</em></strong> protection at all.</li>
+      <li class="size-text">We oppose censorship by government, corporations, or institutions that act as arms of the state.</li>
+      <li class="size-text">We welcome anyone — left, right, center, libertarian, apolitical — who shares our commitment to free expression.</li>
     </ul>
     </section id="Principles">
   </main>
@@ -143,7 +151,7 @@
     <main>
       <section id="TD;LR:">
       <h2 class="aref-ruqaa-regular">Summery</h2>
-      <p>
+      <p class="size-text">
         No matter politics, age, race, identify, or background, our mission is to end the growing suffocation against the first right amendment for all Americans. 
         We stand for <strong><em>ALL</em></strong> people in the fight for freedom of speech and protection against invasive government overreaches that inhibit the universal right to freedom of speech.
       </p>
@@ -154,19 +162,34 @@
 
 <footer class="footer">
 
-  <h2 class="connect-text">Connect With us:</h2>
+  <h2 class="mission-statement">1st-amendment.org is dedicated to promoting free expression, fostering meaningful discussion, and connecting people with resources to defend their First Amendment rights. Our mission is to create a space where individuals can stay informed, share perspectives, and work together to protect the freedoms that define our society.”</h2>
 
-  <div class="social-icons-4">
+
+  <div class="explore">Explore</div>
+
+  <div class="explore-grid">
+    <a class="explore-sections" href="about-us.html">About</a>
+    <a class="explore-sections" href="why-we-exist.html">Why We Exist</a>
+    <a class="explore-sections" href="what-can-I-do.html">What Can I Do?</a>
+    <a class="explore-sections" href="principles.html">Principles</a>
+    <a class="explore-sections" href="connect-wth-us.html">Connect With Us</a>
+    <div class="explore-sections"></div>
+  </div>
+
+
+  <div class="connect">Connect:</div>
+
+  <div class="connect-grid social-icons-1">
     <a href="https://www.tiktok.com/@firstamendmentpp"><img class="social-size" src="images/tiktok.png" alt="Tiktok Logo"></a>
+    <a href="https://www.instagram.com/firstamendmentpp/"><img class="social-size" src="images/insta.png" alt="Instagram Logo"></a>
+    <a href="mailto:firstamendmentpp@gmail.com"><img class="social-size" src="images/email.png" alt="Email Logo"></a>
+  </div> 
+
+  <div class="disclaimer">
+    <a>&copy; <span id="year"></span> 1st-Amendment.org. All rights reserved. Website designed for accessibility. No cookies used.</a>&nbsp;<a href="terms-and-conditions.html" class="privacy-policy">Terms & Conditions</a>&nbsp;<a> • </a>&nbsp;<a href="privacy-policy.html" class="privacy-policy">Privacy Policy</a>
   </div>
 
-  <div class="social-icons-5">
-    <a href="https://www.instagram.com/firstamendmentpp/"><img class="social-size" src="images/insta.png" alt="Instagram Logo"></a>
-  </div>
-  
-  <div class="social-icons-6">
-    <a href="mailto:firstamendmentpp@gmail.com"><img class="social-size" src="images/email.png" alt="Email Logo"></a>
-  </div>
+
 </footer>
 
 
