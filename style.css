@@ -137,7 +137,7 @@ iframe {
 }
 
 
-/* side header + sections + button */
+/* site header + sections + button */
 
 
 
@@ -298,7 +298,7 @@ iframe {
 
 
 
-/* side footer + sections + socials etc */
+/* site footer + sections + socials etc */
 
 
 .footer {
@@ -412,7 +412,7 @@ iframe {
     text-decoration: none;
 }
 
-/* FOOT FOR MOBILE */
+/* FOOTER FOR MOBILE */
 
 @media (max-width: 768px) {
     .mission-statement {
@@ -564,6 +564,9 @@ iframe {
     .social-size {
         width: 6.5vw;
         height: auto;
+    }
+    .Sections-button {
+        width: 100%;
     }
 
 

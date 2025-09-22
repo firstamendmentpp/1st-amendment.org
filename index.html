@@ -53,7 +53,7 @@ document.querySelectorAll('.Sections').forEach(section => {
             setTimeout(() => {
                 content.style.maxHeight = "0px";
                 content.style.opacity = "0";
-            }, 400); // match dropOut animation duration
+            }, 0.00001); // match dropOut animation duration
         } else {
             section.classList.add('open');
             content.style.maxHeight = "500px";
