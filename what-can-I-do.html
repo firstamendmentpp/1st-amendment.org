@@ -5,6 +5,194 @@
     <title>What Can I do?</title>
 </head>
 <body>
+
+
+
+
+
+
+<!--  HEADER  -->
+
+<style>
+.nav {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 12px;
+}
+.nav-item {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.nav-link {
+  padding: 0 !important;
+}
+</style>
+
+
+
+<div class="header-wrapper">
+
+  <div class="container-fluid header-bg-color">
+
+    <div class="d-flex align-items-center justify-content-between w-100">
+
+      <div class="clex-shrink-0">
+        <div class="Sections d-inline-block">
+          <button class="Sections-button"><img class="menu" src="images/menu.png" id="images"></button>
+        </div>
+            
+            <div class="Sections-content start-0">
+              <div class="flex-column">
+
+                  <div class="entire-header">
+                
+                    <div class="home-padding">
+                      <a class="home" href="index.html">Home</a>
+                    </div>
+
+                      <div class="row menu-stuff">
+                        <div>
+                          <a class="link-color" href="about-us.html">About Us</a>
+                          <a class="link-color" href="why-we-exist.html">Why We Exist</a>
+                          <a class="link-color" href="principles.html">Principles</a>
+                          <a class="link-color" href="what-can-I-do?.html">What Can I do to help?</a>
+                          <a class="link-color" href="connect-wth-us.html">Connect With Us</a>
+                        </div>
+
+                          <div class="row align-items-end">
+
+                            <div class="col d-flex justify-content-center">
+                              <a href="https://www.tiktok.com/@firstamendmentpp"><img class="padding-socials" src="images/tiktok1.png"></a>
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                              <a href="https://www.instagram.com/firstamendmentpp/"><img class="padding-socials" src="images/insta1.png"></a>
+                            </div>
+                            <div class="col d-flex justify-content-center">
+                              <a href="mailto:firstamendmentpp@gmail.com"><img class="padding-socials" src="images/email1.png"></a>
+                            </div>
+
+                          </div>
+
+                      </div>
+
+              </div>
+
+            </div> 
+          </div>
+      </div>
+
+      <div class="flex-grow-1 text-center">
+        <h6 class="FAPP-dyn quintessential-regular text-center"><em>First Ammendment Protection Foundation</em></h6>
+      </div>
+
+      <div class="flex-shrink-0">
+        <a href="index.html"><img class="eagle-size" src="images/eaglebg.png"></a>
+      </div>
+
+
+    </div>
+
+
+
+
+
+  </div>
+
+
+  <div class="site-header">
+
+
+  </div>
+
+</div>
+
+
+
+<script>
+const menu = document.querySelector('.menu');
+const words = document.querySelector('.FAPP-dyn');
+const eagle = document.querySelector('.eagle-size');
+const size = document.querySelector('.menu-stuff');
+
+const maxScroll = 15; // scroll threshold in px
+
+// Original (non-shrunk) values
+const menuOriginal = 5; // in vw
+const eagleOriginal = 7.5; // in vw
+const wordsPaddingOriginalTop = 1.5; // rem
+const wordsPaddingOriginalBottom = 1.5; // rem
+const wordsFontOriginal = 1.8; // in vw
+const sizeOriginal = 85.2; //vh
+
+// Target (shrunk) values
+const menuShrunk = 4; // vw
+const eagleShrunk = 6.7; // vw
+const wordsPaddingShrunkTop = 0.75; // rem
+const wordsPaddingShrunkBottom = 0.75; // rem
+const wordsFontShrunk = 1.6; // rem (we can use min clamp value as target)
+const sizeShrunk = 87.5; // vh
+
+window.addEventListener('scroll', () => {
+  const scroll = document.documentElement.scrollTop;
+  let progress = scroll / maxScroll;
+  if (progress > 1) progress = 1; // clamp between 0 and 1
+
+  // Interpolate values between original and shrunk
+  const menuWidth = menuOriginal - (progress * (menuOriginal - menuShrunk));
+  const eagleWidth = eagleOriginal - (progress * (eagleOriginal - eagleShrunk));
+  const wordsPaddingTop = wordsPaddingOriginalTop - (progress * (wordsPaddingOriginalTop - wordsPaddingShrunkTop));
+  const wordsPaddingBottom = wordsPaddingOriginalBottom - (progress * (wordsPaddingOriginalBottom - wordsPaddingShrunkBottom));
+  const wordsFont = wordsFontOriginal - (progress * (wordsFontOriginal - wordsFontShrunk));
+  const sizeFinalish = sizeOriginal - (progress * (sizeOriginal - sizeShrunk));
+
+  // Apply styles dynamically
+  menu.style.width = `${menuWidth}vw`;
+  eagle.style.width = `${eagleWidth}vw`;
+  words.style.paddingTop = `${wordsPaddingTop}rem`;
+  words.style.paddingBottom = `${wordsPaddingBottom}rem`;
+  words.style.fontSize = `${wordsFont}vw`;
+  size.style.height = `${sizeFinalish}vh`;
+});
+</script>
+
+
+<script>
+document.querySelectorAll('.Sections').forEach(section => {
+    const button = section.querySelector('.Sections-button');
+    const content = section.parentElement.querySelector('.Sections-content');
+    const img = document.getElementById('images')
+
+    // Click toggles everywhere
+    button.addEventListener('click', () => {
+        if (section.classList.contains('open')) {
+            section.classList.remove('open');
+            setTimeout(() => {
+                content.style.maxHeight = "0px";
+                content.style.opacity = "0";
+                img.src = 'images/menu.png'
+            }, 0.00001); // match dropOut animation duration
+        } else {
+            section.classList.add('open');
+            content.style.maxHeight = "100vh";
+            content.style.opacity = "1";
+            img.src = 'images/close.png'
+        }
+    });
+});
+</script>
+
+<!--  HEADER  -->
+
+
+
+
+
+
+
+
+
+
+
   <h1>About This Site</h1>
   <nav>
     <a href="index.html">Home</a>
