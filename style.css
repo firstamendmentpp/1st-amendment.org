@@ -110,6 +110,25 @@ iframe {
 }
 
 
+
+.poster {
+    width: 75%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* VIDEO SECTION */
 
 .video-grid {
@@ -744,4 +763,13 @@ h6 {
         height: auto; /* keeps aspect ratio */
         object-fit: contain; /* prevents cropping */
   }
+    .carousel-caption {
+        font-size: .5rem;
+    }
+    p {
+        margin: 0;
+    }
+    .link-color2 {
+        font-size: .7rem;
+    }
 }
