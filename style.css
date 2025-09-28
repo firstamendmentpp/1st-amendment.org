@@ -116,7 +116,22 @@ iframe {
     height: auto;
 }
 
+.download-btn {
+  position: absolute;
+  top: 10px;   /* adjust where you want it */
+  right: 10px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.2s;
+}
 
+.download-btn:hover {
+  background: rgba(0,0,0,0.9);
+}
 
 
 
@@ -227,6 +242,13 @@ h6 {
 
 .header-bg-color {
   background-color: rgb(242, 242, 242);
+}
+
+.header-bg-color1 {
+  background-color: rgb(240, 240, 240);
+}
+.header-bg-color2 {
+  background-color: rgb(255, 129, 46);
 }
 
 
